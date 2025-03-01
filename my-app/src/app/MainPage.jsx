@@ -22,7 +22,7 @@ export default function MainPage() {
         );
         const content = await api.json();
         setAssignment(content.data);
-        //populating the database returned multiple attributes so i had to dig deeper to fetch the imgage url
+        //populating the database returned complicated json for the image so i had to dig deeper to fetch the image url
         setDuck(content.data.mainimage);
         //failed fetch error message
       } catch (error) {
