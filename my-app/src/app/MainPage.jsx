@@ -25,8 +25,8 @@ export default function MainPage() {
         //populating the database returned multiple attributes so i had to dig deeper to fetch the imgage url
         setDuck(content.data.mainimage);
         //failed fetch error message
-      } catch (err) {
-        console.error("Something Went Wrong", err);
+      } catch (error) {
+        console.error("Something Went Wrong", error);
       }
     }
     getApi();
